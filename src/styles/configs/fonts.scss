@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'fj-platz-groteske';
+	src: 
+		local('fonts/fj-platz-groteske'), url('/fonts/fj-platz-groteske/semibold.woff2') format('woff2'), 
+		local('fonts/fj-platz-groteske'), url('/fonts/fj-platz-groteske/semibold.woff') format('woff');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'fj-platz-groteske';
+	src: 
+		local('fonts/fj-platz-groteske'), url('/fonts/fj-platz-groteske/ultrabold.woff2') format('woff2'), 
+		local('fonts/fj-platz-groteske'), url('/fonts/fj-platz-groteske/ultrabold.woff') format('woff');
+	font-weight: 900
+}
