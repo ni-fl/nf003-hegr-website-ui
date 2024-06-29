@@ -1,5 +1,5 @@
 // IMPORTS
-import './globals.css'
+import 'styles/main.scss'
 
 // LAYOUT
 const Layout = ({ children }) => {

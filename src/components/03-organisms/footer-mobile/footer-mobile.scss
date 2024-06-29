@@ -1,0 +1,63 @@
+@import 'styles/configs/variables.scss';
+
+.footer-mobile {
+	padding: 50px 16px;
+	background-color: #ffffff;
+
+	&__connectors, .connectors {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-bottom: 32px;
+	}
+
+	&__links, .links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;;
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__item {
+			margin-right: 24px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+		}
+
+		&__copyright {
+			align-self: end;
+			color: transparentize($black-100, 0.5);
+		}
+
+	}
+
+	@media (min-width: 1000px) {
+		display: none;
+	}
+
+	@media (min-width: 500px) {
+
+		&__connectors {
+			justify-content: space-between;
+			justify-content: column;
+			flex-direction: row;
+		}
+
+		&__links, .links {
+
+			&__container {
+				flex-direction: row;
+			}
+
+		}
+
+	}
+
+}
+

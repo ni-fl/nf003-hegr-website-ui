@@ -1,0 +1,49 @@
+@import 'styles/configs/variables.scss';
+
+.about {
+
+	&__cards, .cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 32px;
+
+		&__item, .item	{
+			background-color: $white-100;
+			padding: 64px;
+
+			&__heading {
+				text-align: center;
+				margin-bottom: 16px;
+			}
+			
+			&__list, .list {
+				
+				&__item {
+					text-align: center;
+				}
+
+			}
+
+		}
+	
+	}
+	
+	@media (max-width: 1000px) {
+
+		&__cards, .cards {
+			grid-template-columns: auto;
+			grid-template-rows: auto auto;
+		}
+
+	}
+
+	@media (max-width: 700px) {
+
+		&__cards, .cards {
+			grid-gap: 16px;
+		}
+
+	}
+
+}

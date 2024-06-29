@@ -1,23 +1,24 @@
-# [UI] NF002 (HEGR) WEBSITE
+# [UI] NF003 (HEGR) WEBSITE
 
 This repository holds the UI of Heller Grafik's portfolio website.
 
-## Insallation
+## Installation
+```
+nvm use
+npm install
+```
 
-### develop
-
+## develop
 ```
 npm run dev
 ```
 
-### start
-
+## start
 ```
 npm run start
 ```
 
-### build
-
+## build
 ```
 npm run build
 ```

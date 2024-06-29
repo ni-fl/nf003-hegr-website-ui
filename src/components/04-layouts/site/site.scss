@@ -1,0 +1,33 @@
+@import 'styles/configs/variables.scss';
+
+.site {
+	width: 100%;
+
+	&__inner {
+		width: 100%;
+		max-width: 2560px;
+		margin: 0 auto;
+	}
+
+	&__content {
+		min-height: calc(100vh - (88px + 146px));
+	}
+
+	@media (max-width: 1000px) {
+
+		&__content {
+			min-height: calc(100vh - (88px + 182px));
+		}
+
+	}
+
+	@media (max-width: 500px) {
+
+		&__content {
+			min-height: calc(100vh - (88px + 257px));
+		}
+
+	}
+	
+}
+

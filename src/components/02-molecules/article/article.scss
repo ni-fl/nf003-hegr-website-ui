@@ -1,0 +1,62 @@
+.article {
+	display: grid;
+	grid-template-areas: 
+		"heading"
+		"text"
+		"details";
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	grid-column-gap: 32px;
+
+	&__heading {
+		grid-area: heading;
+		margin-bottom: 0
+	}
+
+	&__text {
+		grid-area: text;
+		margin-bottom: 32px;
+
+		& > p {
+			margin-bottom: 16px;
+		}
+
+	}
+
+	&__details, .details {
+		grid-area: details;
+		margin-bottom: 32px;
+
+		&__item, .item {
+			margin-bottom: 16px;
+
+			&__detail, .detail {
+
+				&__text {
+
+					& > p > a {
+						text-decoration: underline !important;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media (min-width: 900px) {
+		grid-template-areas:
+				"heading text"
+				"heading details";
+		grid-template-columns: 440px auto;
+		grid-template-rows: auto auto auto auto;
+
+		&__heading {
+			margin-bottom: 0;
+		}
+		
+	}
+
+}

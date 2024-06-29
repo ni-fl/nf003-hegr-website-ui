@@ -1,0 +1,32 @@
+.article {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	grid-column-gap: 32px;
+
+	&__heading, .heading {
+		grid-row: span 2;
+	}
+
+	&__text {
+		margin-bottom: 32px;
+	}
+
+	&__details, .details {
+
+		&__item {
+			margin-bottom: 32px;
+		}
+
+	}
+
+	@media (max-width: 850px) {
+		grid-template-columns: 1fr;
+
+		&__heading {
+			margin-bottom: 32px;
+		}
+
+	}
+
+}

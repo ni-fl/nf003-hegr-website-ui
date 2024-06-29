@@ -1,0 +1,38 @@
+@import 'styles/configs/variables.scss';
+
+.big-arrow-link {
+	display: inline-block;
+	fill: $black-100;
+	cursor: pointer;
+
+	&__arrow {
+		display: inline-block;
+		transition: 0.3s ease;
+		height: 26px;
+		vertical-align: baseline;
+		position: relative;
+		top: 1px;
+	}
+
+	&__text {
+		display: inline;
+		transition: 0.3s ease;
+		margin-right: 10px;
+	}
+
+	&:hover {
+
+		& .big-arrow-link__text,
+		& .big-arrow-link__arrow {
+			color: #5101BE;
+			fill: #5101BE;
+			border-color: #5101BE;
+		}
+
+		& .big-arrow-link__arrow {
+			margin-left: 8px;
+		}
+
+	}
+
+}

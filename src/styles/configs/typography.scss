@@ -5,36 +5,32 @@ h1, h2, h3, h4, h5, h6, p, li, a, td, p {
 }
 
 .text {
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: 700;
+		font-size: 24px;
+		line-height: 33px;
 
-	&--big {
-		font-size: 26px;
-    	line-height: 33px;
-		font-weight: 700;
-	}
+		&--big {
+			font-size: 44px;
+			line-height: 56px;
+		}
 
-	&--small {
-		font-size: 26px;
-    	line-height: 33px;
-		font-weight: 700;
-	}
+		&--small {
+			font-size: 26px;
+			line-height: 33px;
+			font-weight: 700;
+		}
 
 }
 
 .heading {
 
 	&--h1 {
-		font-size: 26px;
-    	line-height: 33px;
-		font-weight: 700;
+		font-size: 44px;
+		line-height: 56px;
 	}
 
 	&--h2 {
-		font-size: 26px;
-    	line-height: 33px;
-		font-weight: 700;
+		font-size: 44px;
+		line-height: 56px;
 	}
 
 	&--h3 {
@@ -44,50 +40,56 @@ h1, h2, h3, h4, h5, h6, p, li, a, td, p {
 
 }
 
-.big-arrow-link {
+.small-arrow-link {
 
 	&__text {
-		font-size: 26px;
-		line-height: 32px;
-	}
-
-	&__arrow {
-		height: 26px;
+		line-height: 30px;
+		font-size: 20px;
 	}
 
 }
 
-@media (min-width: 700px) {
+.big-arrow-link {
+
+	&__text {
+		font-size: 44px;
+		line-height: 56px;
+	}
+
+	&__arrow {
+		height: 35px !important;
+	}
+
+}
+
+
+@media (max-width: 700px) {
 	
 	.heading {
 
 		&--h1 {
-			font-size: 44px;
-			line-height: 56px;
+			font-size: 26px;
+				line-height: 33px;
+			font-weight: 700;
 		}
 
 		&--h2 {
-			font-size: 44px;
-			line-height: 56px;
+			font-size: 26px;
+				line-height: 33px;
+			font-weight: 700;
 		}
 
 	}
 
 	.text {
-		font-size: 24px;
-		line-height: 33px;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 700;
 
 		&--big {
-			font-size: 44px;
-			line-height: 56px;
-		}
-	}
-
-	.small-arrow-link {
-
-		&__text {
-			line-height: 30px;
-    	font-size: 16px;
+			font-size: 26px;
+				line-height: 33px;
+			font-weight: 700;
 		}
 
 	}
@@ -95,12 +97,21 @@ h1, h2, h3, h4, h5, h6, p, li, a, td, p {
 	.big-arrow-link {
 
 		&__text {
-			font-size: 44px;
-			line-height: 56px;
+			font-size: 26px;
+			line-height: 32px;
 		}
 
 		&__arrow {
-			height: 35px !important;
+			height: 26px;
+		}
+
+	}
+
+	.small-arrow-link {
+
+		&__text {
+			line-height: 30px;
+			font-size: 16px;
 		}
 
 	}
