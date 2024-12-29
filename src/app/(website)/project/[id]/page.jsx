@@ -1,24 +1,44 @@
 // PAGE
-import { ProjectDetail } from "components/03-organisms/project-detail/project-detail.jsx";
-import fetchProject from "queries/fetch-project";
+import { ProjectDetail } from 'components/03-organisms/project-detail/project-detail.jsx';
+import { Main } from 'components/03-organisms/main/main.jsx';
+import { Project } from 'components/03-organisms/project/project.jsx';
+import fetchProjectPage from 'queries/fetch-project-page.js';
 
-// PAGE
-const Page = async ({ params }) => {
-
+// GENERATE METADATA
+const generateMetadata = async ({ params }) => {
+	
 	// GET PROJECT ID
 	const { id } = params;
-
+	
 	// FETCH PROJECT
-	const project = await fetchProject({ id: id });
+	const projectPage = await fetchProjectPage({ id: id });
 
-	// RENDER
-	return (
-		<main>
-			<ProjectDetail data={ project } />
-		</main>
-	);
+	// RETURN METADATA
+	return {
+		title: projectPage?.heading ?  `heller grafik - Projekt: ${projectPage?.heading}` : '',
+		description: '',
+	};
 
 };
 
+// PAGE
+const Page = async ({ params }) => {
+	
+	// GET PROJECT ID
+	const { id } = params;
+	
+	// FETCH PROJECT
+	const projectPage = await fetchProjectPage({ id: id });
+	
+	// RENDER
+	return (
+		<main>
+			<Project content={ projectPage } />
+		</main>
+	);
+	
+};
+
 // EXPORTS
+export { generateMetadata };
 export default Page;

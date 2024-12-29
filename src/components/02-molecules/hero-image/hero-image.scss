@@ -1,0 +1,12 @@
+.hero-image {
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 184px);
+    object-fit: cover;
+    margin-bottom: var(--spacing-medium-responsive);
+  }
+
+}

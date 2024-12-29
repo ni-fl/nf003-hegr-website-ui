@@ -1,12 +1,12 @@
 .table {
 
-    &__cell {
-        vertical-align: top;
+  &__cell {
+    vertical-align: top;
 
-        &:first-child {
-            min-width: 160px;
-        }
-
+    &:first-child {
+      min-width: 160px;
     }
+
+  }
 
 }

@@ -1,15 +1,23 @@
 .rich-text {
+  display: inline;
+  white-space: normal;
 
-	&__item {
-		margin-bottom: 24px;
-	}
+  &__block {
+    display: inline;
+  }
 
-	@media(max-width: 700px) {
+  &__item {
+    display: inline;
+  }
 
-		&__item {
-			margin-bottom: 8px;
-		}
+  &__text {
+    display: inline;
+  }
 
-	}
+  &__link {
+    display: inline;
+    text-decoration: none;
+    color: inherit;
+  }
 
 }

@@ -1,119 +1,130 @@
-h1, h2, h3, h4, h5, h6, p, li, a, td, p {
-	font-family: 'fj-platz-groteske', serif;
-	font-weight: 700;
-	color: $black-100;
+h1, h2, h3, h4, h5, h6, p, li, a, td, p, input {
+  font-family: 'fj-platz-groteske', serif;
+  font-weight: 700;
+  color: $black-100;
 }
 
 .text {
-		font-size: 24px;
-		line-height: 33px;
+  font-size: 24px;
+  line-height: 33px;
 
-		&--big {
-			font-size: 44px;
-			line-height: 56px;
-		}
+  &--big {
+    font-size: 44px;
+    line-height: 56px;
+  }
 
-		&--small {
-			font-size: 26px;
-			line-height: 33px;
-			font-weight: 700;
-		}
+  &--small {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 700;
+  }
 
 }
 
 .heading {
 
-	&--h1 {
-		font-size: 44px;
-		line-height: 56px;
-	}
+  &--h1 {
+    font-size: 44px;
+    line-height: 56px;
+  }
 
-	&--h2 {
-		font-size: 44px;
-		line-height: 56px;
-	}
+  &--h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
 
-	&--h3 {
-		font-size: 20px;
+  &--h3 {
+    font-size: 20px;
     line-height: 28px;
-	}
+  }
 
 }
 
 .small-arrow-link {
 
-	&__text {
-		line-height: 30px;
-		font-size: 20px;
-	}
+  &__text {
+    line-height: 30px;
+    font-size: 20px;
+  }
 
 }
 
 .big-arrow-link {
 
-	&__text {
-		font-size: 44px;
-		line-height: 56px;
-	}
+  &__text {
+    font-size: 44px;
+    line-height: 56px;
+  }
 
-	&__arrow {
-		height: 35px !important;
-	}
+  &__arrow {
+    height: 35px !important;
+  }
 
 }
 
+.input-field {
+
+  &__input {
+
+    &::placeholder {
+      font-size: 16px !important;
+    }
+
+  }
+
+}
 
 @media (max-width: 700px) {
-	
-	.heading {
 
-		&--h1 {
-			font-size: 26px;
-				line-height: 33px;
-			font-weight: 700;
-		}
+  .heading {
 
-		&--h2 {
-			font-size: 26px;
-				line-height: 33px;
-			font-weight: 700;
-		}
+    &--h1 {
+      font-size: 26px;
+      line-height: 33px;
+      font-weight: 700;
+    }
 
-	}
+    &--h2 {
+      font-size: 26px;
+      line-height: 33px;
+      font-weight: 700;
+    }
 
-	.text {
-		font-size: 16px;
-		line-height: 22px;
-		font-weight: 700;
+  }
 
-		&--big {
-			font-size: 26px;
-				line-height: 33px;
-			font-weight: 700;
-		}
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
 
-	}
+    &--big {
+      font-size: 26px;
+      line-height: 33px;
+      font-weight: 700;
+    }
 
-	.big-arrow-link {
+  }
 
-		&__text {
-			font-size: 26px;
-			line-height: 32px;
-		}
+  .big-arrow-link {
 
-		&__arrow {
-			height: 26px;
-		}
+    &__text {
+      font-size: 26px;
+      line-height: 32px;
+    }
 
-	}
+    &__arrow {
+      height: 26px;
+    }
 
-	.small-arrow-link {
+  }
 
-		&__text {
-			line-height: 30px;
-			font-size: 16px;
-		}
+  .small-arrow-link {
 
-	}
+    &__text {
+      line-height: 30px;
+      font-size: 16px;
+    }
+
+  }
 
 }

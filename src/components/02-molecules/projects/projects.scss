@@ -1,0 +1,42 @@
+.projects {
+
+  &__item {
+    margin-bottom: var(--spacing-large-responsive);
+
+    &-image {
+      width: 100%;
+      max-height: calc(100vh - 184px);
+      object-fit: cover;
+      height: auto;
+    }
+
+    &-image-link,
+    &-video-link {
+
+      &:hover + .big-arrow-link {
+
+        & .big-arrow-link__text,
+        & .big-arrow-link__arrow {
+          color: #5101BE;
+          fill: #5101BE;
+          border-color: #5101BE;
+        }
+
+        & .big-arrow-link__arrow {
+          margin-left: 8px;
+        }
+
+      }
+
+    }
+
+    &-video {
+      width: 100%;
+      max-height: calc(100vh - 184px);
+      object-fit: cover;
+      height: auto;
+    }
+
+  }
+
+}

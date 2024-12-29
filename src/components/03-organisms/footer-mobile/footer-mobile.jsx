@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 // FOOTER MOBILE
 const FooterMobile = () => {
-
+	
 	// RETURN
 	return (
 		<footer className="footer-mobile">
@@ -21,11 +21,11 @@ const FooterMobile = () => {
 				<p className="links__copyright">©Isabel Heller</p>
 			</address>
 		</footer>
-	)
-
+	);
+	
 };
 
 // EXPORTS
 export {
-	FooterMobile,
+	FooterMobile
 };

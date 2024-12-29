@@ -1,0 +1,97 @@
+@import 'styles/configs/variables.scss';
+
+.login-form {
+  background-color: $black-40;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+
+  &__card {
+    background-color: $white-100;
+    padding: 64px;
+    border-radius: 20px;
+    max-width: 400px;
+  }
+
+  &__logo {
+    margin: 0 auto 32px;
+    text-align: center;
+    font-size: 24px;
+    display: block;
+    width: 80px;
+    height: auto;
+  }
+
+  &__dialpad {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
+  }
+
+
+  &__dialpad-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $black-40;
+    border: 2px solid $white-100;
+    color: $black-100;
+    font-size: 25px;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+
+      & > * {
+        color: $black-100;
+      }
+
+    }
+
+    &:active {
+      background-color: darken($white-100, 10%);
+    }
+
+    &:last-child {
+      justify-self: center;
+    }
+
+  }
+
+  &__status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-dot {
+      width: 10px;
+      height: 10px;
+      background-color: $black-40;
+      border: 2px solid $white-100;
+      margin: 5px;
+      border-radius: 50%;
+
+      &--active {
+        background-color: $black-100;
+      }
+
+    }
+
+  }
+
+
+}

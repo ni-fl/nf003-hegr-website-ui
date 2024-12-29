@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 // SMALL ARROW LINK
 const SmallArrowLink = ({ className = '', children = '', href = '' }) => {
-
+	
 	// RENDER
 	return (
 		<Link className={ `${ className } small-arrow-link` } href={ href }>
@@ -14,10 +14,10 @@ const SmallArrowLink = ({ className = '', children = '', href = '' }) => {
 			<span className="small-arrow-link__text">{ children }</span>
 		</Link>
 	);
-
+	
 };
 
 // EXPORTS
 export {
-	SmallArrowLink,
-}
+	SmallArrowLink
+};

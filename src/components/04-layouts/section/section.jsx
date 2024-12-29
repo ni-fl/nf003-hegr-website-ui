@@ -3,7 +3,7 @@ import 'components/04-layouts/section/section.scss';
 
 // SECTION
 const Section = ({ className, children }) => {
-
+	
 	// RENDER
 	return (
 		<div className={ `${ className } section` }>
@@ -12,10 +12,10 @@ const Section = ({ className, children }) => {
 			</div>
 		</div>
 	);
-
+	
 };
 
 // EXPORTS
 export {
-	Section,
+	Section
 };

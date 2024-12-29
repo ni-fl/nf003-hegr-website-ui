@@ -1,0 +1,14 @@
+.imprint {
+  padding-top: 64px !important;
+
+  &__article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+
+  &__article-info-block {
+    margin-bottom: 32px;
+  }
+
+}

@@ -1,31 +1,26 @@
 // IMPORTS
 import 'components/03-organisms/teaser/teaser.scss';
-import { Section } from "components/04-layouts/section/section";
-import { P } from "components/01-atoms/text/text";
-import { SmallArrowLink } from "components/01-atoms/small-arrow-link/small-arrow-link";
-import { Picture } from "components/02-molecules/picture/picture";
+import { Section } from 'components/04-layouts/section/section';
+import { SmallArrowLink } from 'components/01-atoms/small-arrow-link/small-arrow-link';
+import { H2 } from 'components/01-atoms/heading/heading.jsx';
+import Image from 'next/image';
 
 // TEASER
 const Teaser = ({ data }) => {
-
+	
 	// RENDER
 	return (
 		<Section className="teaser">
-			{ data.attributes.text.map((text) => (
-				<div className="teaser__text-parent" key={ text.id }>
-					{ text.children.map((item, index) => (
-						<P className="teaser__text text--big" key={ index }>{item.text}</P>
-					))}
-				</div>
-			))}
-			<SmallArrowLink className="teaser__link" href={ data.attributes.button.href }>{ data.attributes.button.label }</SmallArrowLink>
-			<Picture className="teaser__image" src={ data.attributes.image.data.attributes.url } alt=''/>
+			<H2 className="teaser__heading" level="h1">{ data?.heading }</H2>
+			<H2 className="teaser__subheading" level="h2">{ data?.subheading }</H2>
+			<SmallArrowLink className="teaser__link" href={ data?.button?.href }>{ data?.button.label }</SmallArrowLink>
+			<Image className="teaser__image" src={ data?.image?.url } width={ data?.image?.width } height={ data?.image.height } alt="Heller Grafik"/>
 		</Section>
 	);
-
+	
 };
 
 // EXPORTS
 export {
-	Teaser,
+	Teaser
 };

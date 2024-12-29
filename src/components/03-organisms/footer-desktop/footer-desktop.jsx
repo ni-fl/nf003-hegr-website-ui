@@ -4,14 +4,14 @@ import Link from 'next/link';
 
 // FOOTER DESKTOP
 const FooterDesktop = () => {
-
+	
 	// RENDER
 	return (
 		<footer className="footer-desktop">
 			<div className="footer-desktop__container">
 				<address className="footer-desktop__logo logo">
 					<Link className="logo__link" href="/">
-						<img className="logo__logo" src="/logos/hellergrafik/full.svg" alt="heller grafik"/>
+						<img className="logo__logo" src="/logos/heller-grafik/full.svg" alt="heller grafik"/>
 					</Link>
 				</address>
 				<address className="footer-desktop__connectors connectors">
@@ -27,10 +27,10 @@ const FooterDesktop = () => {
 			</div>
 		</footer>
 	);
-
+	
 };
 
 // EXPORTS
 export {
-	FooterDesktop,
+	FooterDesktop
 };

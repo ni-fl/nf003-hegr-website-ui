@@ -1,0 +1,9 @@
+.timeline {
+
+  &__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 32px;
+  }
+
+}

@@ -1,0 +1,35 @@
+.spacer {
+
+  &__space {
+
+    &--extra-extra-small {
+      height: 16px;
+    }
+
+    &--extra-small {
+      height: 24px;
+    }
+
+    &--small {
+      height: 32px;
+    }
+
+    &--medium {
+      height: 40px;
+    }
+
+    &--large {
+      height: 80px;
+    }
+
+    &--extra-large {
+      height: 180px;
+    }
+
+    &--extra-extra-large {
+      height: 320px;
+    }
+
+  }
+
+}

@@ -1,11 +1,11 @@
 // IMPORTS
-import 'components/01-atoms/list-item/list-item.scss'
+import 'components/01-atoms/list-item/list-item.scss';
 import { P } from 'components/01-atoms/text/text';
 import Link from 'next/link';
 
 // LIST
-const LI = ({ className, href, children }) => {
-
+const Li = ({ className, href, children }) => {
+	
 	// RENDER
 	return (
 		<div className="list-item">
@@ -18,10 +18,10 @@ const LI = ({ className, href, children }) => {
 			) }
 		</div>
 	);
-
+	
 };
 
 // EXPORTS
 export {
-	LI,
-}
+	Li
+};

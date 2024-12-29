@@ -1,0 +1,29 @@
+@import 'styles/configs/variables.scss';
+
+.address {
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-medium-responsive);
+    margin-bottom: 32px;
+  }
+
+  &__item-link {
+
+    &:hover .address__item-text {
+      color: $purple-100;
+    }
+
+  }
+
+  &__item-text {
+   transition: all 0.3s ease;
+    color: $black-100;
+  }
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
+
+}

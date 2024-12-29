@@ -1,5 +1,25 @@
 $black-100: #151515;
+$black-80: #4c4c4c;
+$black-60: #bbbbbb;
+$black-40: #eeeeee;
 $purple-100: #400095;
 $purple-80: #5101BE;
 $white-100: #FFFFFF;
 $white-80: #F5F5F5;
+$red-100: #E21100;
+
+:root {
+  --spacing-small: 24px;
+  --spacing-small-responsive: 24px;
+  --spacing-medium: 32px;
+  --spacing-medium-responsive: 32px;
+  --spacing-large: 48px;
+  --spacing-large-responsive: 48px;
+
+  @media (max-width: 700px) {
+    --spacing-small-responsive: 12px;
+    --spacing-medium-responsive: 16px;
+    --spacing-large-responsive: 24px;
+  }
+
+}

@@ -1,21 +1,37 @@
 // PAGE
-import { TouchPoints } from "components/03-organisms/touchpoints/touchpoints.jsx";
-import fetchTouchpoints from "queries/fetch-touchpoints";
+import { Main } from 'components/03-organisms/main/main.jsx';
+import fetchContactPage from 'queries/fetch-contact-page.js';
+import fetchProjectsPage from 'queries/fetch-projects-page.js';
 
-// PAGE
-const Page = async () => {
+// GENERATE METADATA
+const generateMetadata = async () => {
 
-	// FETCH TOUCHPOINTS
-	const touchpoints = await fetchTouchpoints();
+	// FETCH DATA
+	const contactPage = await fetchContactPage();
 
-	// RENDER
-	return (
-		<main>
-			<TouchPoints data={ touchpoints } />
-		</main>
-	);
+	// RETURN METADATA
+	return {
+		title: contactPage?.metadata?.title ? contactPage?.metadata?.title  : '',
+		description: contactPage?.metadata?.description ? contactPage?.metadata?.description : '',
+	};
 
 };
 
+// PAGE
+const Page = async () => {
+	
+	// FETCH TOUCH-POINTS
+	const contactPage = await fetchContactPage();
+	
+	// RENDER
+	return (
+		<main>
+			<Main content={ contactPage?.content }/>
+		</main>
+	);
+	
+};
+
 // EXPORTS
+export { generateMetadata };
 export default Page;

@@ -1,16 +1,34 @@
 .touchpoints {
-	padding-top: 64px !important;
+  padding-top: 64px !important;
 
-	&__address, &__contact {
-		margin-bottom: 32px;
-	}
+  &__address-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 48px 32px;
+    margin-bottom: 48px;
+  }
 
-	&__contact-infos {
-		margin-bottom: 32px;
-	}
+  &__address-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-	&__image {
-		margin-bottom: 32px;
-	}
+  &__image-item {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 1100px) {
+
+    &__address-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 48px 32px;
+    }
+  }
 
 }
