@@ -1,10 +1,6 @@
 // IMPORTS
-import { Teaser } from 'components/03-organisms/teaser/teaser.jsx';
-import { About } from 'components/03-organisms/about/about';
-import { Responsibility } from 'components/03-organisms/responsibility/responsibility.jsx';
+import { Main } from 'components/05-renderer/main/main.jsx';
 import fetchInfoPage from 'queries/fetch-info-page.js';
-import { Main } from 'components/03-organisms/main/main.jsx';
-import fetchStartPage from 'queries/fetch-start-page.js';
 
 // GENERATE METADATA
 const generateMetadata = async () => {
@@ -15,7 +11,7 @@ const generateMetadata = async () => {
 	// RETURN METADATA
 	return {
 		title: infoPage?.metadata?.title ? infoPage?.metadata?.title  : '',
-		description: infoPage.metadata?.description ? infoPage?.metadata?.description : '',
+		description: infoPage?.metadata?.description ? infoPage?.metadata?.description : '',
 	};
 
 };

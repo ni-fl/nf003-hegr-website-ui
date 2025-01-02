@@ -1,17 +1,15 @@
 // IMPORTS
 import 'components/03-organisms/project/project.scss';
+import Image from 'next/image';
 import { Section } from 'components/04-layouts/section/section';
 import { H1 } from 'components/01-atoms/heading/heading.jsx';
-import { HeroImage } from 'components/02-molecules/hero-image/hero-image.jsx';
-import { SmallLink } from 'components/02-molecules/small-link/small-link.jsx';
-import { Projects } from 'components/02-molecules/projects/projects.jsx';
-import { Article } from 'components/02-molecules/article/article.jsx';
-import { Intro } from 'components/02-molecules/intro/intro.jsx';
-import { Timeline } from 'components/02-molecules/timeline/timeline.jsx';
+import { HeroImage } from 'components/03-organisms/hero-image/hero-image.jsx';
+import { Projects } from 'components/03-organisms/projects/projects.jsx';
+import { Article } from 'components/03-organisms/article/article.jsx';
+import { Intro } from 'components/03-organisms/intro/intro.jsx';
 import { Paragraph } from 'components/02-molecules/paragraph/paragraph.jsx';
 import { SmallArrowLink } from 'components/01-atoms/small-arrow-link/small-arrow-link.jsx';
-import Image from 'next/image';
-import { Main } from 'components/03-organisms/main/main.jsx';
+import { Main } from 'components/05-renderer/main/main.jsx';
 
 // TEASER
 const Project = ({ content }) => {
@@ -29,7 +27,7 @@ const Project = ({ content }) => {
 			)}
 			<div className="project__article">
 				<H1 className="project__article-heading">{ content?.heading }</H1>
-				<Main className="project__article-infos" content={content.infos} />
+				<Main className="project__article-infos" content={content?.infos} />
 			</div>
 			<div className="project__impressions">
 				{ content?.impressions.map((impression, index) => (

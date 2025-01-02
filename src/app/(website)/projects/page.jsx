@@ -1,7 +1,6 @@
 // IMPORTS
 import fetchProjectsPage from 'queries/fetch-projects-page.js';
-import { Portfolio } from 'components/03-organisms/portfolio/portfolio';
-import { Main } from 'components/03-organisms/main/main.jsx';
+import { Main } from 'components/05-renderer/main/main.jsx';
 
 // GENERATE METADATA
 const generateMetadata = async () => {
@@ -12,7 +11,7 @@ const generateMetadata = async () => {
 	// RETURN METADATA
 	return {
 		title: projectsPage?.metadata?.title ? projectsPage?.metadata?.title  : '',
-		description: projectsPage.metadata?.description ? projectsPage?.metadata?.description : '',
+		description: projectsPage?.metadata?.description ? projectsPage?.metadata?.description : '',
 	};
 
 };
@@ -26,7 +25,7 @@ const Page = async () => {
 	// RENDER
 	return (
 		<main>
-			<Main content={projectPages.content}	/>
+			<Main content={projectPages?.content}	/>
 		</main>
 	);
 	

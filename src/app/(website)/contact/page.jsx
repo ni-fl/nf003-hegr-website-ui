@@ -1,5 +1,5 @@
 // PAGE
-import { Main } from 'components/03-organisms/main/main.jsx';
+import { Main } from 'components/05-renderer/main/main.jsx';
 import fetchContactPage from 'queries/fetch-contact-page.js';
 import fetchProjectsPage from 'queries/fetch-projects-page.js';
 

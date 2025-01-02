@@ -1,8 +1,6 @@
 // IMPORTS
-import { Hero } from 'components/03-organisms/hero/hero.jsx';
-import { Showcase } from 'components/03-organisms/showcase/showcase.jsx';
 import fetchStartPage from 'queries/fetch-start-page.js';
-import { Main } from 'components/03-organisms/main/main.jsx';
+import { Main } from 'components/05-renderer/main/main.jsx';
 
 
 // GENERATE METADATA

@@ -1,6 +1,5 @@
 // IMPORTS
-import { Main} from 'components/03-organisms/main/main.jsx';
-import { Imprint } from 'components/03-organisms/imprint/imprint';
+import { Main} from 'components/05-renderer/main/main.jsx';
 import fetchImprintPage from 'queries/fetch-imprint-page.js';
 import fetchContactPage from 'queries/fetch-contact-page.js';
 

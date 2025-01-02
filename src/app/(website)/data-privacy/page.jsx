@@ -1,6 +1,5 @@
 // IMPORTS
-import { Main} from 'components/03-organisms/main/main.jsx';
-import { DataPrivacy } from 'components/03-organisms/data-privacy/data-privacy';
+import { Main} from 'components/05-renderer/main/main.jsx';
 import fetchDataPrivacyPage from 'queries/fetch-data-privacy-page.js';
 import fetchImprintPage from 'queries/fetch-imprint-page.js';
 
