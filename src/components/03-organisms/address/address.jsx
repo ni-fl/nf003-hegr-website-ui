@@ -18,33 +18,33 @@ const Address = ({ className, data }) => {
 							<span className="address__item-container" key={ index }>
 						{ link.href ? (
 							<Link className="address__item-link" href={ link.href }>
-								<H2 className="address__item-text">{ link.label }</H2>
+								<H2 className="address__item-text" level="h2" looklike="h2">{ link.label }</H2>
 							</Link>
 						) : (
-							<H2 className="address__item-text">{ link.label }</H2>
+							<H2 className="address__item-text" level="h2" looklike="h2">{ link.label }</H2>
 						) }
 						</span>
 						)) }
 					</div>
 				</div>
 				<div className="address__item">
-					<H3 className="address__item-title">{ data?.contact?.heading }</H3>
+					<H3 className="address__item-title" level="h3" looklike="h3">{ data?.contact?.heading }</H3>
 					<div className="address__item-links">
 						{ data.contact.links.map((link, index) => (
 							<span className="address__item-container" key={ index }>
 						{ link.href ? (
 							<Link className="address__item-link" href={ link.href }>
-								<H2 className="address__item-text">{ link.label }</H2>
+								<H2 className="address__item-text" level="h2" looklike="h2">{ link.label }</H2>
 							</Link>
 						) : (
-							<H2 className="address__item-text">{ link.label }</H2>
+							<H2 className="address__item-text" level="h2" looklike="h2">{ link.label }</H2>
 						) }
 						</span>
 						)) }
 					</div>
 				</div>
 				<div className="address__item">
-					<H3 className="address__item-title">{ data?.post?.heading }</H3>
+					<H3 className="address__item-title" level="h3" looklike="h3">{ data?.post?.heading }</H3>
 					<div className="address__item-links">
 						{ data.post.links.map((link, index) => (
 							<span className="address__item-container" key={ index }>
@@ -53,23 +53,23 @@ const Address = ({ className, data }) => {
 								<H2 className="address__item-text">{ link.label }</H2>
 							</Link>
 						) : (
-							<H2 className="address__item-text">{ link.label }</H2>
+							<H2 className="address__item-text" level="h2" looklike="h2">{ link.label }</H2>
 						) }
 						</span>
 						)) }
 					</div>
 				</div>
 				<div className="address__item">
-					<H3 className="address__item-title">{ data?.office?.heading }</H3>
+					<H3 className="address__item-title" level="h3" looklike="h3">{ data?.office?.heading }</H3>
 					<div className="address__item-links">
 						{ data.office.links.map((link, index) => (
 							<span className="address__item-container" key={ index }>
 						{ link.href ? (
 							<Link className="address__item-link" href={ link.href }>
-								<H2 className="address__item-text">{ link.label }</H2>
+								<H2 className="address__item-text" level="h2" looklike="h2">{ link.label }</H2>
 							</Link>
 						) : (
-							<H2 className="address__item-text">{ link.label }</H2>
+							<H2 className="address__item-text" level="h2" looklike="h2">{ link.label }</H2>
 						) }
 						</span>
 						)) }

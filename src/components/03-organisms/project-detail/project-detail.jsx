@@ -21,7 +21,7 @@ const ProjectDetail = ({ data }) => {
 				</video>
 			) }
 			<div className="project-detail__article">
-				<H1 className="project-detail__article-heading">{ data?.heading }</H1>
+				<H1 className="project-detail__article-heading" level="h1" looklike="h1">{ data?.heading }</H1>
 				<div className="project-detail__article-info-list">
 					{ data?.infos?.map((info) => (
 						<div className="project-detail__article-info-block" key={ info.id }>

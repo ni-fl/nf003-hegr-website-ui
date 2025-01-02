@@ -8,10 +8,11 @@ import { Section } from 'components/04-layouts/section/section.jsx';
 // CONTACT INFOS
 const HeroImage = ({ className, data }) => {
 	
+	
 	// RENDER
 	return (
-		<Section className={ `${ className } hero-image` }>
-				<Image className="hero-image__image" src={data.url} alt={data.alternativeText || "heller grafik"} priority  width={ data.width } height={data.height}/>
+		<Section className={ `${ className } hero-image ${ data?.hasPadding === false ? 'hero-image--no-padding' : '' }` }>
+				<Image className="hero-image__image" src={data?.image?.url} alt={data?.image?.alternativeText || "heller grafik"} priority  width={ data?.image?.width } height={data?.image?.height}/>
 		</Section>
 	);
 	

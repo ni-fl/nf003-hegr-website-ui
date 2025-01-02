@@ -28,7 +28,6 @@ const fetchInfoPage = async () => {
     method: 'GET'
   });
 
-  console.log(res);
   // PARSE JSON
   const { data } = await res.json();
 

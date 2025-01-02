@@ -15,7 +15,7 @@ const Team = ({ className, data }) => {
 				<div className="team__team-member" key={index}>
 					<Image className="team__team-member-image" src={ member?.image?.url } width={ member?.image?.width } height={ member?.image?.height } alt={ member?.heading }/>
 					<div className="team__team-member-article">
-						<H1 className="team__team-member-article-heading">{ member.heading }</H1>
+						<H1 className="team__team-member-article-heading" level="h1" looklike="h1">{ member.heading }</H1>
 						<Main className="team__team-member-article-infos" content={ member.infos } />
 					</div>
 				</div>

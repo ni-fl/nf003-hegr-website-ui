@@ -24,7 +24,7 @@ const fetchProjectsPage = async () => {
     next: { revalidate: process.env.NEXT_PUBLIC_REVALIDATION_TIME },
     method: 'GET',
   });
-
+  
   // PARSE JSON
   const { data } = await res.json();
 

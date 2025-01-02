@@ -10,6 +10,7 @@ const fetchProjectPage = async ({ id }) => {
   // DEFINE THE QUERY STRING
   const query = queryString.stringify({
     'populate[teaser][populate]': '*',
+    'populate[logo][populate]': '*',
     'populate[infos][populate]': '*',
     'populate[impressions][populate]': '*',
     'populate[project]': '*',

@@ -1,3 +1,5 @@
+@import 'styles/configs/variables.scss';
+
 .rich-text {
   display: inline;
   white-space: normal;
@@ -16,8 +18,20 @@
 
   &__link {
     display: inline;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    underline-color: $black-100;
     color: inherit;
+    transition: all 0.3s ease;
+
+    &:hover {
+
+      & .text {
+        color: $purple-100;
+      }
+
+    }
+
   }
 
 }

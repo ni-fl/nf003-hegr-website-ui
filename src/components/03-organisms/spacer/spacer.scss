@@ -32,4 +32,28 @@
 
   }
 
+  @media (max-width: 850px) {
+
+    &__space {
+
+      &--medium {
+        height: 24px;
+      }
+
+      &--large {
+        height: 40px;
+      }
+
+      &--extra-large {
+        height: 64px;
+      }
+
+      &--extra-extra-large {
+        height: 200px;
+      }
+
+    }
+
+  }
+
 }

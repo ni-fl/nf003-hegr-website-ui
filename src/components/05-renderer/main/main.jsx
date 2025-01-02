@@ -21,7 +21,7 @@ const Main = ({ className, content }) => {
 		<div className={`${ className } main `}>
 			{ content?.map((component, index) => (
 				<div className="main__component" key={index}>
-					{component.__component === 'section.hero-image' ? <HeroImage className="main__hero-image" data={ component.image } /> : '' }
+					{component.__component === 'section.hero-image' ? <HeroImage className="main__hero-image" data={ component } /> : '' }
 					{component.__component === 'section.projects' ? <Projects className="main__projects" data={ component } /> : '' }
 					{component.__component === 'section.article' ? <Article className="main__article" data={ component } /> : '' }
 					{component.__component === 'section.intro' ? <Intro className="main__intro" data={ component } /> : '' }

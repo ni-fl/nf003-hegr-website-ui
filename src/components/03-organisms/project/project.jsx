@@ -17,16 +17,16 @@ const Project = ({ content }) => {
 	// RENDER
 	return (
 		<Section className="project">
-			{ content?.teaser[0]?.image && (
-				<Image className="project__image" src={ content?.teaser[0]?.image?.url } width={ content?.teaser[0]?.image?.width } height={ content?.teaser[0]?.image?.height } alt={ content?.heading }/>
+			{ content?.logo[0]?.image && (
+				<Image className="project__image" src={ content?.logo[0]?.image?.url } width={ content?.logo[0]?.image?.width } height={ content?.logo[0]?.image?.height } alt={ content?.heading }/>
 			)}
-			{ content?.teaser[0]?.video && content?.teaser[0]?.poster && (
-				<video className="project__video" preload="auto" autoPlay muted loop playsInline width={ content?.teaser[0]?.poster?.width } height={ content?.teaser[0]?.poster?.height } poster={ content?.teaser[0]?.poster?.url }>
-					<source src={ content?.teaser[0]?.video?.url } type="video/mp4"/>
+			{ content?.logo[0]?.video && content?.logo[0]?.poster && (
+				<video className="project__video" preload="auto" autoPlay muted loop playsInline width={ content?.logo[0]?.poster?.width } height={ content?.logo[0]?.poster?.height } poster={ content?.logo[0]?.poster?.url }>
+					<source src={ content?.logo[0]?.video?.url } type="video/mp4"/>
 				</video>
 			)}
 			<div className="project__article">
-				<H1 className="project__article-heading">{ content?.heading }</H1>
+				<H1 className="project__article-heading" level="h1" looklike="h1">{ content?.heading }</H1>
 				<Main className="project__article-infos" content={content?.infos} />
 			</div>
 			<div className="project__impressions">

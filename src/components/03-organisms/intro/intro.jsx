@@ -11,7 +11,7 @@ const Intro = ({ className, data }) => {
 		<Section className={ `${ className } intro` }>
 			<div className="intro__headings">
 				{ data?.headings?.map((item, index) => (
-					<h1 className="intro__heading heading heading--h1" key={index}>{ item.text }</h1>
+					<h1 className="intro__heading" level="h1" looklike="h1" key={index}>{ item.text }</h1>
 				)) }
 			</div>
 			{ data?.link && (

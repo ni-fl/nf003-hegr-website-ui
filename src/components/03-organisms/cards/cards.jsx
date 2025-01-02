@@ -6,8 +6,6 @@ import { Section } from 'components/04-layouts/section/section.jsx';
 // CARDS
 const Cards = ({ className, data }) => {
 	
-	// console.log(data);
-	
 	// RENDER
 	return (
 		<Section className={ `${ className } cards` }>
