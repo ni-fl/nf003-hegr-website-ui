@@ -1,3 +1,5 @@
+@import 'styles/configs/variables.scss';
+
 .footer-desktop {
   display: none;
   width: 100%;
@@ -34,6 +36,12 @@
 
     &__item {
       margin-right: 24px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $purple-100;
+      }
+
     }
 
     &:last-child {
@@ -50,6 +58,11 @@
 
     &__item {
       margin-right: 24px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $purple-100;
+      }
 
       &:last-child {
         color: #CECECE;

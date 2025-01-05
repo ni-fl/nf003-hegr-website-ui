@@ -11,14 +11,15 @@
     display: block;
     width: 100%;
     height: auto;
+    max-height: calc(100vh - (88px + 32px));
     object-fit: cover;
-    margin-bottom: 32px;
+    margin-bottom: var(--spacing-large-responsive);
   }
 
   &__article {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--spacing-small);
+    grid-template-columns: 600px 1fr;
+    grid-gap: var(--spacing-small-responsive);
 
     &-infos {
       margin-bottom: var(--spacing-medium-responsive);
@@ -67,7 +68,7 @@
     margin-bottom: var(--spacing-large-responsive);
   }
 
-  @media(max-width: 1000px) {
+  @media(max-width: 1100px) {
 
     &__article {
       grid-template-columns: 1fr;

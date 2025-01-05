@@ -3,11 +3,16 @@
   &__item {
     margin-bottom: var(--spacing-large-responsive);
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &-image {
       width: 100%;
       max-height: calc(100vh - 184px);
       object-fit: cover;
       height: auto;
+      margin-bottom: 16px;
     }
 
     &-image-link,
@@ -35,6 +40,18 @@
       max-height: calc(100vh - 184px);
       object-fit: cover;
       height: auto;
+    }
+
+  }
+
+  @media (max-width: 700px) {
+
+    &__item {
+
+      &-image {
+        margin-bottom: 4px;
+      }
+
     }
 
   }

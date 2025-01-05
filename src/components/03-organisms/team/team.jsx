@@ -13,9 +13,12 @@ const Team = ({ className, data }) => {
 		<Section className={ `${ className } team` }>
 			{ data?.team?.map((member, index) => (
 				<div className="team__team-member" key={index}>
-					<Image className="team__team-member-image" src={ member?.image?.url } width={ member?.image?.width } height={ member?.image?.height } alt={ member?.heading }/>
+					<Image className="team__team-member-image" src={ member?.image?.url } width={ member?.image?.width } height={ member?.image?.height } alt={ member?.image?.alternativeText || "heller grafik" }/>
 					<div className="team__team-member-article">
-						<H1 className="team__team-member-article-heading" level="h1" looklike="h1">{ member.heading }</H1>
+						<div className="team__team-member-article-heading">
+							<H1 className="team__team-member-article-heading-name" level="h1" looklike="h1">{ member.name }</H1>
+							<H1 className="team__team-member-article-heading-role" level="h2" looklike="h1">{ member.role }</H1>
+						</div>
 						<Main className="team__team-member-article-infos" content={ member.infos } />
 					</div>
 				</div>

@@ -17,7 +17,7 @@ const RT = ({ className, children }) => {
 								<P className="rich-text__text">{ item.text }</P>
 							) : '' }
 							{ item.type === 'link' ? item.children.map((subitem, index) => (
-								<Link className="rich-text__link" href="#" key={ index }>
+								<Link className="rich-text__link" href={ item.url } key={ index } target="_blank">
 									<P className="rich-text__text">{ subitem.text }</P>
 								</Link>
 							)) : '' }

@@ -3,16 +3,16 @@
 .cards {
 
   &__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: var(--spacing-medium-responsive);
-  width: 100%;
-  margin-bottom: var(--spacing-medium-responsive);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: var(--spacing-medium-responsive);
+    width: 100%;
+    margin-bottom: var(--spacing-medium-responsive);
   }
 
   &__card {
     background-color: $white-100;
-    padding: 40px;
+    padding: var(--spacing-large) var(--spacing-medium-responsive);
 
   }
 
@@ -23,6 +23,14 @@
 
   &__card-value {
     text-align: center;
+  }
+
+  @media (max-width: 700px) {
+
+    &__container {
+      grid-template-columns: (1fr);
+    }
+
   }
 
 }

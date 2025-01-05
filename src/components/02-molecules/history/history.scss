@@ -1,9 +1,9 @@
 .history {
 
-  &__item {
+  &__content {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-gap: 32px;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: var(--spacing-large-responsive);
   }
 
 }

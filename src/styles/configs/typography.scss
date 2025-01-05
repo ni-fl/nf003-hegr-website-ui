@@ -7,6 +7,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, td, p, input {
 .text {
   font-size: 24px;
   line-height: 33px;
+  max-width: var(--content-max-width);
 
   &--big {
     font-size: 44px;
@@ -22,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, td, p, input {
 }
 
 .heading {
+  max-width: var(--content-max-width);
 
   &--h1 {
     font-size: 44px;
@@ -62,6 +64,18 @@ h1, h2, h3, h4, h5, h6, p, li, a, td, p, input {
 
 }
 
+.paragraph {
+  max-width: var(--content-max-width);
+}
+
+.navigation-desktop {
+
+  &__navigation-item {
+    font-size: 20px;
+  }
+
+}
+
 .input-field {
 
   &__input {
@@ -80,14 +94,20 @@ h1, h2, h3, h4, h5, h6, p, li, a, td, p, input {
 
     &--h1 {
       font-size: 26px;
-      line-height: 33px;
+      line-height: 32px;
       font-weight: 700;
     }
 
     &--h2 {
       font-size: 26px;
-      line-height: 33px;
+      line-height: 32px;
       font-weight: 700;
+    }
+
+    &--h3 {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 900;
     }
 
   }

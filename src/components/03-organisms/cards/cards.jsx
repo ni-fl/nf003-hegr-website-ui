@@ -12,10 +12,10 @@ const Cards = ({ className, data }) => {
 			<div className="cards__container">
 				{ data.cards.map((card, index) => (
 					<div className="cards__card" key={ index }>
-						<H3 className="cards__card-title">{ card.heading }</H3>
+						<H3 className="cards__card-title" level="h3" looklike="h3">{ card.heading }</H3>
 						<div className="cards__card-list">
 							{ card.values.map((value, index) => (
-								<H2 className="cards__card-value" key={ index }>{ value.text }</H2>
+								<H2 className="cards__card-value" level="h2" looklike="h2" key={ index }>{ value.text }</H2>
 							)) }
 						</div>
 					</div>

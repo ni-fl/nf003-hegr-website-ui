@@ -1,8 +1,17 @@
 .intro {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 
   &__headings {
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-small-responsive);
+  }
+
+  &__heading {
+    margin-bottom: var(--spacing-small-responsive);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
   }
 
 }

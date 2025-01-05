@@ -15,6 +15,7 @@ $red-100: #E21100;
   --spacing-medium-responsive: 32px;
   --spacing-large: 48px;
   --spacing-large-responsive: 48px;
+  --content-max-width: 850px;
 
   @media (max-width: 700px) {
     --spacing-small-responsive: 12px;

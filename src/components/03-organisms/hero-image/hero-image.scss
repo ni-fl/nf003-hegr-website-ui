@@ -1,16 +1,16 @@
 .hero-image {
 
-  &--no-padding {
-    padding: 0;
-  }
-
   &__image {
     display: block;
     width: 100%;
     height: auto;
-    max-height: calc(100vh - 184px);
+    max-height: calc(100vh - 200px);
     object-fit: cover;
     margin-bottom: var(--spacing-medium-responsive);
+  }
+
+ &--no-padding {
+    padding: 0;
   }
 
 }

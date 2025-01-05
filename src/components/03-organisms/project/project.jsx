@@ -5,7 +5,6 @@ import { Section } from 'components/04-layouts/section/section';
 import { H1 } from 'components/01-atoms/heading/heading.jsx';
 import { HeroImage } from 'components/03-organisms/hero-image/hero-image.jsx';
 import { Projects } from 'components/03-organisms/projects/projects.jsx';
-import { Article } from 'components/03-organisms/article/article.jsx';
 import { Intro } from 'components/03-organisms/intro/intro.jsx';
 import { Paragraph } from 'components/02-molecules/paragraph/paragraph.jsx';
 import { SmallArrowLink } from 'components/01-atoms/small-arrow-link/small-arrow-link.jsx';

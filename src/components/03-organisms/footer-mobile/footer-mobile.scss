@@ -9,6 +9,16 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 32px;
+
+    &__item {
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $purple-100;
+      }
+
+    }
+
   }
 
   &__links, .links {
@@ -23,6 +33,11 @@
 
     &__item {
       margin-right: 24px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $purple-100;
+      }
 
       &:last-child {
         margin-right: 0;

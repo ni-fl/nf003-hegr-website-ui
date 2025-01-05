@@ -34,13 +34,12 @@
   &__navigation {
     margin-right: auto;
     width: 90px;
-    padding: 10px 20px 10px 0;
+    padding: 8px 24px 8px 0;
   }
 
   &__navigation-item {
-    margin-left: 32px;
+    margin-left: 24px;
     margin-bottom: 7px;
-    font-size: 20px;
 
     &--active,
     &:hover {

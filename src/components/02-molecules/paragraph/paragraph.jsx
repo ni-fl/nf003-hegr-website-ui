@@ -9,7 +9,7 @@ const Paragraph = ({ data, className }) => {
 	// RENDER
 	return (
 		<Partial className={ `${ className } paragraph` }>
-			<H3 className="paragraph__heading">{ data?.heading }</H3>
+			<H3 className="paragraph__heading" level="h3" looklike="h3">{ data?.heading }</H3>
 			<RT className="paragraph__text">{ data?.text }</RT>
 		</Partial>
 	);
