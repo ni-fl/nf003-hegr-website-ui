@@ -3,7 +3,7 @@ import queryString from 'query-string';
 
 // FETCH PROJECT PAGE
 const fetchProjectPage = async ({ id }) => {
-  
+ 
   // DEFINE THE BASE URL
   const baseURL = `${ process.env.NEXT_PUBLIC_CMS_URI }/api/projects/${ id }`;
   
@@ -13,7 +13,7 @@ const fetchProjectPage = async ({ id }) => {
     'populate[logo][populate]': '*',
     'populate[infos][populate]': '*',
     'populate[impressions][populate]': '*',
-    'populate[project]': '*',
+    'populate[project][populate]': '*',
   });
   
   // DEFINE THE URL
