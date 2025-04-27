@@ -50,7 +50,7 @@
   &__impression {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
 
     &[data-format="alpha"] {
       grid-column: span 2;
