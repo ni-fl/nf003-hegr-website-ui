@@ -30,7 +30,7 @@ const NavigationMobile = ({ className }) => {
 		// CREATE ANIMATION
 		const context = gsap.context(() => {
 			menuTimelineRef.current = gsap.timeline({ paused: true });
-			menuTimelineRef.current.to('.menu', { height: '152px', boxShadow: '8px 16px 16px 8px #f5f5f5', duration: 0.1 });
+			menuTimelineRef.current.to('.menu', { height: '168px', boxShadow: '0 80px 80px 64px #f5f5f5', duration: 0.1 });
 			menuTimelineRef.current.to('.list__item', { right: '0%', stagger: 0.15, duration: 0.3 });
 		}, navigationMobileRef);
 		
