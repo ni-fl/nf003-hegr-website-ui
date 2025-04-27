@@ -14,16 +14,18 @@
     grid-area: heading;
   }
 
-  &__detail-block {
-    margin-bottom: 32px;
-  }
-
-  &__text {
-    grid-area: text;
+  &__detail {
     margin-bottom: 32px;
 
-    & > p {
-      margin-bottom: 16px;
+
+    &__text {
+      grid-area: text;
+      margin-bottom: 32px;
+
+      & > p {
+        margin-bottom: 16px;
+      }
+
     }
 
   }
@@ -54,12 +56,12 @@
   @media (max-width: 1100px) {
 
     &__container {
-    grid-template-areas:
+      grid-template-areas:
           "heading"
           "text"
           "details";
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
     }
 
     &__heading {

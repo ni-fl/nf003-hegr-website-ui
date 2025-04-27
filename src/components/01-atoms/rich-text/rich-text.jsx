@@ -7,33 +7,53 @@ import Link from 'next/link';
 const RT = ({ className, children }) => {
 	
 	// RENDER
-	return (
-		<div className={ `${ className } rich-text` }>
-			{ children?.map((content, index) => (
-				<div className="rich-text__block" key={ index }>
-					{ content.children.map((item, index) => (
-						<span className="rich-text__item" key={ index }>
-							{ item.type === 'text' ? (
-								<P className="rich-text__text">{ item.text }</P>
-							) : '' }
-							{ item.type === 'link' ? item.children.map((subitem, index) => (
-								<Link className="rich-text__link" href={ item.url } key={ index } target="_blank">
-									<P className="rich-text__text">{ subitem.text }</P>
-								</Link>
-							)) : '' }
-							{ item.type === 'list-item' ? item.children.map((subitem, index) => (
-								<P className="rich-text__list-item" key={index}>{ subitem.text }</P>
-							)) : '' }
-						</span>
-					)) }
-				</div>
-			)) }
-		</div>
-	);
+  return (
+    <div className={`${className} rich-text`}>
+      {children?.map((content, contentIndex) => (
+        <div className="rich-text__block" key={contentIndex}>
+          {content.type === 'paragraph' && (
+            content.children.map((node, nodeIndex) => node.type === 'link' ? (
+                <Link className="rich-text__link" href={node.url} target="_blank" rel="noopener noreferrer" key={nodeIndex} >
+                  <P className="rich-text__text">
+                    {node.children?.[0]?.text}
+                  </P>
+                </Link>
+              ) : (
+                <P className="rich-text__text" key={nodeIndex}>
+                  {node.text}
+                </P>
+              )
+            )
+          )}
+          {content.type === 'list' && (
+            <ul className={`rich-text__list rich-text__list--${content.format}`}>
+              {content.children.map((item, itemIndex) => (
+                <li className="rich-text__item" key={itemIndex}>
+                  {item.children.map((node, nodeIndex) =>
+                    node.type === 'link' ? (
+                      <Link className="rich-text__link" href={node.url} target="_blank" rel="noopener noreferrer" key={nodeIndex} >
+                        <P className="rich-text__text">
+                          {node.children?.[0]?.text}
+                        </P>
+                      </Link>
+                    ) : (
+                      <P className="rich-text__text" key={nodeIndex}>
+                        {node.text}
+                      </P>
+                    )
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+    </div>
+  );
 	
 };
 
 // EXPORTS
 export {
-	RT
+  RT
 };

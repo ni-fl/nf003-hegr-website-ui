@@ -9,7 +9,7 @@
   }
 
   &__item {
-    display: inline;
+    display: block;
   }
 
   &__text {
@@ -19,7 +19,8 @@
   &__link {
     display: inline;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
     underline-color: $black-100;
     color: inherit;
     transition: all 0.3s ease;
