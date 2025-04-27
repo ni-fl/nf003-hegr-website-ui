@@ -21,7 +21,7 @@ const fetchProjectsPage = async () => {
 
   // SEND REQUEST
   const res = await fetch(url, {
-    next: { revalidate: process.env.NEXT_PUBLIC_REVALIDATION_TIME },
+    cache: 'no-cache',
     method: 'GET',
   });
   
