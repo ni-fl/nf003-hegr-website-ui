@@ -4,6 +4,23 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: var(--spacing-large-responsive);
+    grid-row-gap: var(--spacing-extra-small-responsive);
+  }
+
+  @media (max-width: 1200px) {
+
+    &__content {
+      grid-template-columns: auto;
+    }
+
+  }
+
+  @media (max-width: 1100px) {
+
+    &__content {
+      grid-template-columns: auto 1fr;
+    }
+
   }
 
 }

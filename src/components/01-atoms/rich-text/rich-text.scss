@@ -4,20 +4,8 @@
   display: inline;
   white-space: normal;
 
-  &__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
   &__item {
-    display: inline;
+    display: block;
   }
 
   &__text {
