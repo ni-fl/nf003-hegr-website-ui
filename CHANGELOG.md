@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.2.1] - 27.04.2025
+- Fix: delete sharp package
+- Fix: sharp version downgrade
+
 ## [v0.2.0] - 27.04.2025
 - Refactor: formats for impressions
 - Refactor: styling of history elements
