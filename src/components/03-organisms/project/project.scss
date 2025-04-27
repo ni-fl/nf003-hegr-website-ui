@@ -41,7 +41,8 @@
 
   &__impressions {
     display: grid;
-    grid-template-column: 1fr 1fr;
+    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
     margin-bottom: var(--spacing-large-responsive);
   }
@@ -63,7 +64,17 @@
 
     &[data-format="gamma"] {
       grid-column: span 1;
-      grid-row: span 1;
+      grid-row: auto;
+    }
+
+    &[data-format="gamma-left"] {
+      grid-column: 1;
+      grid-row: auto;
+    }
+
+    &[data-format="gamma-right"] {
+      grid-column: 2;
+      grid-row: auto;
     }
 
   }
