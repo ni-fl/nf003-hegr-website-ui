@@ -102,7 +102,9 @@
 
       &[data-format="alpha"],
       &[data-format="beta"],
-      &[data-format="gamma"] {
+      &[data-format="gamma"],
+      &[data-format="gamma-left"],
+      &[data-format="gamma-right"] {
         grid-column: span 2;
         grid-row: span 1;
       }
