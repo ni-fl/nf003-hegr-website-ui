@@ -40,6 +40,7 @@
       max-height: calc(100vh - 184px);
       object-fit: cover;
       height: auto;
+      margin-bottom: 16px;
     }
 
   }
@@ -49,6 +50,10 @@
     &__item {
 
       &-image {
+        margin-bottom: 4px;
+      }
+
+      &-video {
         margin-bottom: 4px;
       }
 

@@ -16,7 +16,15 @@
   @media (max-width: 1000px) {
 
     &__content {
-      min-height: calc(100vh - (88px + 182px));
+      min-height: calc(100vh - (88px + 148px));
+    }
+
+  }
+
+  @media (max-width: 700px) {
+
+    &__content {
+      min-height: calc(100vh - (88px + 116px));
     }
 
   }
@@ -24,7 +32,15 @@
   @media (max-width: 500px) {
 
     &__content {
-      min-height: calc(100vh - (88px + 257px));
+      min-height: calc(100vh - (88px + 194px));
+    }
+
+  }
+
+  @media (max-width: 450px) {
+
+    &__content {
+      min-height: calc(100vh - (56px + 194px));
     }
 
   }
