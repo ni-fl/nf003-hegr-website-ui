@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.3.0] - 02.05.2025
+- Setup: 404 page
+- Fix: sizing of impression images
+
 ## [v0.2.1] - 27.04.2025
 - Fix: delete sharp package
 - Fix: sharp version downgrade
