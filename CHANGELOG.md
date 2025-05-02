@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.3.1] - 02.05.2025
+- Fix: media-query for impression images
+ 
 ## [v0.3.0] - 02.05.2025
 - Setup: 404 page
 - Fix: sizing of impression images
