@@ -6,7 +6,7 @@ const H1 = ({ className, children, level, looklike }) => {
 	
 	// RENDER
 	return (
-		<h1 className={ ` ${ className } heading heading--${ looklike || level }` }>{ children }</h1>
+		<h1 className={ ` ${ className } heading heading--${ looklike || level || 'h1' }` }>{ children }</h1>
 	);
 	
 };
@@ -16,7 +16,7 @@ const H2 = ({ className, children, level, looklike }) => {
 	
 	// RENDER
 	return (
-		<h2 className={ ` ${ className } heading heading--${ looklike || level }` }>{ children }</h2>
+		<h2 className={ ` ${ className } heading heading--${ looklike || level || 'h2' }` }>{ children }</h2>
 	);
 	
 };
@@ -26,7 +26,7 @@ const H3 = ({ className, children, level, looklike }) => {
 	
 	// RENDER
 	return (
-		<h3 className={ ` ${ className } heading heading--${ looklike || level }` }>{ children }</h3>
+		<h3 className={ ` ${ className } heading heading--${ looklike || level || 'h3' }` }>{ children }</h3>
 	);
 	
 };

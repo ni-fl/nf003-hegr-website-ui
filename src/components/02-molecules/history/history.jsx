@@ -11,7 +11,7 @@ const History = ({ data, className }) => {
 	// RENDER
 	return (
 		<Partial className={ `${ className } history` }>
-			<H3 className="history__heading">{ data.heading }</H3>
+			<H3 className="history__heading" level="h3">{ data.heading }</H3>
 			<div className="history__content">
 			{ data?.events?.map((event, index) => (
 				<Fragment key={index}>
