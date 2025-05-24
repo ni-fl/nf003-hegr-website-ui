@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.3.2] - 24.05.2025
+- Fix: color of underline in rich-text links on hover
+- Fix: fallback for levels in headings
+- Refactor: styling of history elements
+
 ## [v0.3.1] - 02.05.2025
 - Fix: media-query for impression images
  
