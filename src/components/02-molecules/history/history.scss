@@ -1,10 +1,14 @@
 .history {
 
+  &__heading {
+    margin-bottom: var(--spacing-extra-extra-small-responsive)
+  }
+
   &__content {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-column-gap: var(--spacing-large-responsive);
-    grid-row-gap: var(--spacing-extra-small-responsive);
+    grid-row-gap: var(--spacing-extra-extra-small-responsive);
   }
 
   @media (max-width: 1200px) {
